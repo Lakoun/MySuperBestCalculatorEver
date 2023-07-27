@@ -8,6 +8,16 @@
           "tagPrefix": "dot",
           "namespace": "DotVVM.Framework.Controls",
           "assembly": "DotVVM.Framework"
+        },
+        {
+          "tagPrefix": "cc",
+          "tagName": "CalculatorCard",
+          "src": "Views/Controls/CalculatorCard.dotcontrol"
+        },
+        {
+          "tagPrefix": "cc",
+          "tagName": "ResultsCard",
+          "src": "Views/Controls/ResultsCard.dotcontrol"
         }
       ],
       "importedNamespaces": [
@@ -26,6 +36,11 @@
       "Default": {
         "url": "",
         "virtualPath": "Views/Default.dothtml",
+        "defaultValues": {}
+      },
+      "Log": {
+        "url": "log",
+        "virtualPath": "Views/Log.dothtml",
         "defaultValues": {}
       },
       "_dotvvm_diagnostics_compilation": {

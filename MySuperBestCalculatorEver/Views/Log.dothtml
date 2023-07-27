@@ -1,0 +1,11 @@
+﻿@viewModel MySuperBestCalculatorEver.ViewModels.LogViewModel, MySuperBestCalculatorEver
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div>
+        <dot:Repeater DataSource="{value: loglines}">
+            <ItemTemplate>{{value: _this}}<br></ItemTemplate>
+        </dot:Repeater>
+    </div>
+</dot:Content>
+

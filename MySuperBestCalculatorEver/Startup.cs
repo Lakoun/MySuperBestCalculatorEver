@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using DotVVM.Framework.Hosting;
 using DotVVM.Framework.Routing;
 using MyBestDataClassEver;
+using Microsoft.Extensions.Logging;
 
 namespace MySuperBestCalculatorEver {
     public class Startup {
@@ -24,6 +25,7 @@ namespace MySuperBestCalculatorEver {
             services.AddAuthentication();
 
 
+            services.AddSingleton<FileLogger>(p => new FileLogger("MySuper.log")); /*(provider => new FileLogger("/logfile.log"));*/
             services.AddScoped<CalcDataDal>();
             services.AddDotVVM<DotvvmStartup>();
         }

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Projects\\MySuperBestCalculatorEver\\MySuperBestCalculatorEver\\wwwroot\\Resources\\style.css",
+      "PackagePath": "staticwebassets\\Resources\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MySuperBestCalculatorEver.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MySuperBestCalculatorEver.props",
+      "PackagePath": "build\\MySuperBestCalculatorEver.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MySuperBestCalculatorEver.props",
+      "PackagePath": "buildMultiTargeting\\MySuperBestCalculatorEver.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MySuperBestCalculatorEver.props",
+      "PackagePath": "buildTransitive\\MySuperBestCalculatorEver.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

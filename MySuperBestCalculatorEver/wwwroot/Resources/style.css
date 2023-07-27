@@ -1,0 +1,28 @@
+﻿.button-row {
+    display: flex; 
+    justify-content: 5px; 
+}
+
+    .button-row button {
+        flex: 1;
+        padding: 10px 20px;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .button-row button:hover {
+            background-color: #0056b3;
+        }
+
+.superCard {
+    height:400px;
+}
+
+button{
+margin: 2px !important;
+}
+input {
+    margin: 2px !important;
+}

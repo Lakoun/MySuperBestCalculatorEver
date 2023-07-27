@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "BhUQrJatsDDwAGqUSB/AFyUQ25lAL9VcgdBRp2k9WGU=",
+  "Source": "MySuperBestCalculatorEver",
+  "BasePath": "_content/MySuperBestCalculatorEver",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MySuperBestCalculatorEver\\wwwroot",
+      "Source": "MySuperBestCalculatorEver",
+      "ContentRoot": "C:\\Projects\\MySuperBestCalculatorEver\\MySuperBestCalculatorEver\\wwwroot\\",
+      "BasePath": "_content/MySuperBestCalculatorEver",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Projects\\MySuperBestCalculatorEver\\MySuperBestCalculatorEver\\wwwroot\\Resources\\style.css",
+      "SourceId": "MySuperBestCalculatorEver",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\MySuperBestCalculatorEver\\MySuperBestCalculatorEver\\wwwroot\\",
+      "BasePath": "_content/MySuperBestCalculatorEver",
+      "RelativePath": "Resources/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\style.css"
+    }
+  ]
+}

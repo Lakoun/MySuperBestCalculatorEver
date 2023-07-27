@@ -1,0 +1,9 @@
+@viewModel MySuperBestCalculatorEver.ViewModels.DefaultViewModel, MySuperBestCalculatorEver
+
+
+
+<div class="card">
+    <div class="card-body superCard">
+        <h1>Vysledky</h1>
+    </div>
+</div>

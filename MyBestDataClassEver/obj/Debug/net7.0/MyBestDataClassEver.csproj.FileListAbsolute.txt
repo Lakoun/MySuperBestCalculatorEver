@@ -1,0 +1,12 @@
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\bin\Debug\net7.0\MyBestDataClassEver.deps.json
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\bin\Debug\net7.0\MyBestDataClassEver.dll
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\bin\Debug\net7.0\MyBestDataClassEver.pdb
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\obj\Debug\net7.0\MyBestDataClassEver.csproj.AssemblyReference.cache
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\obj\Debug\net7.0\MyBestDataClassEver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\obj\Debug\net7.0\MyBestDataClassEver.AssemblyInfoInputs.cache
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\obj\Debug\net7.0\MyBestDataClassEver.AssemblyInfo.cs
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\obj\Debug\net7.0\MyBestDataClassEver.csproj.CoreCompileInputs.cache
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\obj\Debug\net7.0\MyBestDataClassEver.dll
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\obj\Debug\net7.0\refint\MyBestDataClassEver.dll
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\obj\Debug\net7.0\MyBestDataClassEver.pdb
+C:\Projects\MySuperBestCalculatorEver\MyBestDataClassEver\obj\Debug\net7.0\ref\MyBestDataClassEver.dll

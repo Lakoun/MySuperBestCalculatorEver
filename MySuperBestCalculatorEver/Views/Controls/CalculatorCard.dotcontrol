@@ -6,42 +6,54 @@
         <div class="calculator">
             <div class="button-row">
                 <dot:TextBox Visible="{value: result == 0}" Text="{value: expression}" style="width:100%" class="form-control" disabled />
-                <dot:TextBox Visible="{value: result != 0}"Text="{value: result}" style="width:100%" class="form-control" disabled />
+                <dot:TextBox Visible="{value: result != 0}" Text="{value: result}" style="width:100%" class="form-control" disabled />
             </div>
 
             <div class="calculator-keys">
                 <div class="button-row">
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("7")}" Text="7" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("8")}" Text="8" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("9")}" Text="9" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("+")}" class="bg-blue" Text="+" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("7")}" Text="7" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("8")}" Text="8" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("9")}" Text="9" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("+")}" class="bg-blue" Text="+" />
                 </div>
 
                 <div class="button-row">
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("4")}" Text="4" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("5")}" Text="5" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("6")}" Text="6" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("-")}" class="bg-blue" Text="-" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("4")}" Text="4" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("5")}" Text="5" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("6")}" Text="6" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("-")}" class="bg-blue" Text="-" />
                 </div>
 
                 <div class="button-row">
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("1")}" Text="1" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("2")}" Text="2" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("3")}" Text="3" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("*")}" class="bg-blue" Text="*" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("1")}" Text="1" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("2")}" Text="2" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("3")}" Text="3" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("*")}" class="bg-blue" Text="*" />
                 </div>
 
                 <div class="button-row">
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("0")}" Text="0" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar(".")}" Text="." />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("C")}" Text="C" />
-                    <dot:button ButtonTagName="button" Click="{command: AddChar("/")}" class="bg-blue" Text="/" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("0")}" Text="0" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar(".")}" Text="." />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("C")}" Text="C" />
+                    <dot:Button ButtonTagName="button" Click="{command: AddChar("/")}" class="bg-blue" Text="/" />
                 </div>
 
                 <div class="button-row">
-                    <dot:button Click="{command: Calc()}" ButtonTagName="button" class="bg-red" Text="Spocitat" />
+                    <dot:Button Click="{command: Calc()}" ButtonTagName="button" class="bg-red" Text="Spocitat" />
                 </div>
 
+
+                <div class="button-row">
+                            <label class="row">
+                                <span class="col">Cela cisla</span>
+                                <span class="col-auto">
+                                    <label class="form-check form-check-single form-switch">
+                                        <dot:CheckBox class="form-check-input"  Checked="{value: IsRsultNotDouble}" />
+                                    </label>
+                                </span>
+                            </label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

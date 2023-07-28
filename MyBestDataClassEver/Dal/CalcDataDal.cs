@@ -10,8 +10,8 @@ using _DbClass = MyBestDataClassEver.Entities.SavedResults;
 
 namespace MyBestDataClassEver {
     public class CalcDataDal {
-        public int MyProperty { get; set; }
         public string CollectionName { get; set; } = typeof(_DbClass).Name;
+
         public IMongoCollection<_DbClass> _collection;
 
         public CalcDataDal(IMongoDatabase db) {

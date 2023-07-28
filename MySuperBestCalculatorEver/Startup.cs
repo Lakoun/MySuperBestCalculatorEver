@@ -8,6 +8,7 @@ using DotVVM.Framework.Hosting;
 using DotVVM.Framework.Routing;
 using MyBestDataClassEver;
 using Microsoft.Extensions.Logging;
+using MongoDB.Driver;
 
 namespace MySuperBestCalculatorEver {
     public class Startup {
@@ -24,9 +25,12 @@ namespace MySuperBestCalculatorEver {
             services.AddWebEncoders();
             services.AddAuthentication();
 
+            services.AddSingleton<IMongoDatabase>(_ =>
+    new MongoClient(Configuration.GetConnectionString("DB"))
+        .GetDatabase(Configuration.GetSection("Mongo").GetValue<string>("DbName")));
 
             services.AddSingleton<FileLogger>(p => new FileLogger("MySuper.log")); /*(provider => new FileLogger("/logfile.log"));*/
-            services.AddScoped<CalcDataDal>();
+            services.AddSingleton<CalcDataDal>();
             services.AddDotVVM<DotvvmStartup>();
         }
 

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DotVVM.Framework.Hosting;
 using DotVVM.Framework.ViewModel;
+using MyBestDataClassEver;
 using MyBestDataClassEver.Entities;
 using Newtonsoft.Json;
 
@@ -12,33 +13,23 @@ namespace MySuperBestCalculatorEver.ViewModels
 {
     public class MasterPageViewModel : DotvvmViewModelBase
     {
+       
         public UserPreferences UserPreferences { get; set; } = new UserPreferences();
 
+        
+
         public override Task Init() {
-
-            if (!Context.IsPostBack) {
-                if (Context.GetAspNetCoreContext().Request.Cookies.TryGetValue("UserPreferences", out var preferencesJson)) {
-                    try {
-                        JsonConvert.PopulateObject(preferencesJson, UserPreferences);
-                    } catch (Exception e) {
-                        //TODO
-                    }
-                }
-
-                //if (UserPreferences.CurrentGroupId != null) {
-                //    SelectedGroup = AvalibleGroups.Where(g => g.GroupId == UserPreferences.CurrentGroupId).FirstOrDefault();
-                //}
-
-                ////TODO: If selected
-                //if (SelectedGroup == null && AvalibleGroups.Count() > 0) {
-                //    SelectedGroup = AvalibleGroups.FirstOrDefault();
-                //    UserPreferences.CurrentGroupId = SelectedGroup.GroupId;
-                //}
-            }
+            initCookies();
 
             return base.Init();
         }
         public override async Task PreRender() {
+            initCookies();
+
+            await base.PreRender();
+        }
+
+        public void initCookies() {
             if (!Context.IsPostBack) {
                 if (Context.GetAspNetCoreContext().Request.Cookies.TryGetValue("UserPreferences", out var preferencesJson)) {
                     try {
@@ -47,23 +38,11 @@ namespace MySuperBestCalculatorEver.ViewModels
                         //TODO
                     }
                 }
-
-                //if (UserPreferences.CurrentGroupId != null) {
-                //    SelectedGroup = AvalibleGroups.Where(g => g.GroupId == UserPreferences.CurrentGroupId).FirstOrDefault();
-                //}
-
-                ////TODO: If selected
-                //if (SelectedGroup == null && AvalibleGroups.Count() > 0) {
-                //    SelectedGroup = AvalibleGroups.FirstOrDefault();
-                //    UserPreferences.CurrentGroupId = SelectedGroup.GroupId;
-                //}
             }
 
             Context.GetAspNetCoreContext().Response.Cookies.Append("UserPreferences", JsonConvert.SerializeObject(UserPreferences), new() {
                 Expires = DateTime.Now.AddDays(60)
             });
-
-            await base.PreRender();
         }
 
         public void SaveResultsToCookie(string expression) {

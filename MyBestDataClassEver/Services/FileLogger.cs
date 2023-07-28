@@ -15,6 +15,11 @@ public class FileLogger : ILogger {
             string logMessage = formatter(state, exception);
             File.AppendAllText(_filePath, $"{DateTime.Now} [{logLevel}] - {logMessage}{Environment.NewLine}");
         }
+        SendError(exception);
+    }
+
+    void SendError(Exception exception) { 
+        //nevim co tim auto myslel (v zadani se tato metoda vyskytuje 2x v trochu jimen kontextu);
     }
 
     public bool IsEnabled(LogLevel logLevel) {

@@ -6,21 +6,30 @@ using DotVVM.Framework.Controls;
 using DotVVM.Framework.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MyBestDataClassEver;
 using MyBestDataClassEver.Helpers;
 
 namespace MySuperBestCalculatorEver.ViewModels {
     public class DefaultViewModel : MasterPageViewModel {
+
         private readonly ILogger _logger;
+
+        public CalcDataDal _calcRes;
         public string Title { get; set; }
 
         public string expression { get; set; } = "";
 
         public double? result { get; set; } = 0;
 
+        public bool IsRsultNotDouble { get; set; }
+
         public List<string> List { get; set; } = new List<string>();
 
-        public DefaultViewModel(FileLogger logger) {
+        public DefaultViewModel(FileLogger logger, CalcDataDal calcRes) {
+            _calcRes = calcRes;
+
             _logger = logger;
+
             _logger.LogInformation("This is a log message.");
 
             Title = "Hello my super calculator!";
@@ -38,9 +47,15 @@ namespace MySuperBestCalculatorEver.ViewModels {
         }
 
         public void Calc() {
-            result = CalcHelper.EvaluateExpression(expression);
-            SaveResultsToCookie(expression + " = " + result);
-            GetLastValues();
+            if (expression != "") { 
+                result = CalcHelper.EvaluateExpression(expression);
+                if (IsRsultNotDouble) result = Math.Round((double)result);
+                _calcRes.InsertNew("myRes", new MyBestDataClassEver.Entities.SavedResults() { 
+                BrowserId = "", Expresion = expression + " = " + result
+                });
+                SaveResultsToCookie(expression + " = " + result);
+                GetLastValues();
+            }
         }
 
         public void GetLastValues() {

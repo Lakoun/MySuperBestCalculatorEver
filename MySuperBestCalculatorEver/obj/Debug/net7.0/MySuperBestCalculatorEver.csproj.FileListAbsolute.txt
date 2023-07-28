@@ -54,3 +54,4 @@ C:\Projects\MySuperBestCalculatorEver\MySuperBestCalculatorEver\bin\Debug\net7.0
 C:\Projects\MySuperBestCalculatorEver\MySuperBestCalculatorEver\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
 C:\Projects\MySuperBestCalculatorEver\MySuperBestCalculatorEver\bin\Debug\net7.0\MyBestDataClassEver.dll
 C:\Projects\MySuperBestCalculatorEver\MySuperBestCalculatorEver\bin\Debug\net7.0\MyBestDataClassEver.pdb
+C:\Projects\MySuperBestCalculatorEver\MySuperBestCalculatorEver\bin\Debug\net7.0\NCalc.dll

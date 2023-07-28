@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySuperBestCalculatorEver",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBestDataClassEver", "MyBestDataClassEver\MyBestDataClassEver.csproj", "{39060B2C-5A73-4D86-9871-B60C808E28A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySuperEasyUnitTest", "MySuperEasyUnitTest\MySuperEasyUnitTest.csproj", "{3EE59FA3-0787-4020-ABBA-5068B5E2C004}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{39060B2C-5A73-4D86-9871-B60C808E28A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39060B2C-5A73-4D86-9871-B60C808E28A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39060B2C-5A73-4D86-9871-B60C808E28A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE59FA3-0787-4020-ABBA-5068B5E2C004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE59FA3-0787-4020-ABBA-5068B5E2C004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE59FA3-0787-4020-ABBA-5068B5E2C004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE59FA3-0787-4020-ABBA-5068B5E2C004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

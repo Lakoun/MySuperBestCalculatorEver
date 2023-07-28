@@ -5,12 +5,17 @@
 <head>
     <meta charset="utf-8" />
     <title>MySuperBestCalculatorEver</title>
-    <dot:RequiredResource Name="Styles"/>
-    <dot:RequiredResource Name="Tabler"/>
+    <dot:RequiredResource Name="Styles" />
+    <dot:RequiredResource Name="Tabler" />
 </head>
 <body>
-
-    <dot:ContentPlaceHolder ID="MainContent" />
-
+    <cc:Navbar />
+    <div class="page-wrapper">
+        <div class="page-header d-print-none">
+            <div class="container-xl">
+                <dot:SpaContentPlaceHolder ID="MainContent" />
+            </div>
+        </div>
+    </div>
 </body>
 </html>

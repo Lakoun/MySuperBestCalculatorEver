@@ -22,7 +22,7 @@ namespace MySuperBestCalculatorEver {
         private void ConfigureControls(DotvvmConfiguration config, string applicationPath) {
             config.Markup.AddMarkupControl("cc", "CalculatorCard", "Views/Controls/CalculatorCard.dotcontrol");
             config.Markup.AddMarkupControl("cc", "ResultsCard", "Views/Controls/ResultsCard.dotcontrol");
-            // register code-only controls and markup controls
+            config.Markup.AddMarkupControl("cc", "Navbar", "Views/Controls/Navbar.dotcontrol");
         }
 
         private void ConfigureResources(DotvvmConfiguration config, string applicationPath) {
@@ -33,9 +33,6 @@ namespace MySuperBestCalculatorEver {
                 Location = new UrlResourceLocation("https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"),
                 Dependencies = new[] { "TablerCss" }
             });
-            //config.Resources.Register("jquery", new ScriptResource {
-            //    Location = new UrlResourceLocation("~/lib/jquery/jquery.min.js")
-            //});
             config.Resources.Register("Styles", new StylesheetResource() {
                 Location = new UrlResourceLocation("~/Resources/style.css")
             });

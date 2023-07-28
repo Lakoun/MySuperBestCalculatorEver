@@ -18,6 +18,11 @@
           "tagPrefix": "cc",
           "tagName": "ResultsCard",
           "src": "Views/Controls/ResultsCard.dotcontrol"
+        },
+        {
+          "tagPrefix": "cc",
+          "tagName": "Navbar",
+          "src": "Views/Controls/Navbar.dotcontrol"
         }
       ],
       "importedNamespaces": [

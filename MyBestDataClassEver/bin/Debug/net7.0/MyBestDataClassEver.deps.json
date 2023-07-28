@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "MyBestDataClassEver/1.0.0": {
         "dependencies": {
-          "MongoDB.Driver": "2.20.0"
+          "MongoDB.Driver": "2.20.0",
+          "ncalc": "1.3.8"
         },
         "runtime": {
           "MyBestDataClassEver.dll": {}
@@ -128,6 +129,14 @@
           }
         }
       },
+      "ncalc/1.3.8": {
+        "runtime": {
+          "lib/NCalc.dll": {
+            "assemblyVersion": "1.3.8.0",
+            "fileVersion": "1.3.8.0"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "runtime": {
           "lib/net5.0/SharpCompress.dll": {
@@ -238,6 +247,13 @@
       "sha512": "sha512-fgNw8Dxpkq7mpoaAYes8cfnPRzvFIoB8oL9GPXwi3op/rONftl0WAeg4akRLcxfoVuUvuUO2wGoVBr3JzJ7Svw==",
       "path": "mongodb.libmongocrypt/1.8.0",
       "hashPath": "mongodb.libmongocrypt.1.8.0.nupkg.sha512"
+    },
+    "ncalc/1.3.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T3kt6mWc70x3Ex5PxOmuILy563CGAdoAnyknXX7Du2/SXs2T94hNwc5CVwZcwCu5/A2ZBZhnHnc5dpcqCRGQ0A==",
+      "path": "ncalc/1.3.8",
+      "hashPath": "ncalc.1.3.8.nupkg.sha512"
     },
     "SharpCompress/0.30.1": {
       "type": "package",

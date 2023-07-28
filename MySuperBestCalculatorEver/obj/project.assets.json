@@ -548,6 +548,15 @@
           }
         }
       },
+      "ncalc/1.3.8": {
+        "type": "package",
+        "compile": {
+          "lib/NCalc.dll": {}
+        },
+        "runtime": {
+          "lib/NCalc.dll": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -2368,7 +2377,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "MongoDB.Driver": "2.20.0"
+          "MongoDB.Driver": "2.20.0",
+          "ncalc": "1.3.8"
         },
         "compile": {
           "bin/placeholder/MyBestDataClassEver.dll": {}
@@ -3000,6 +3010,18 @@
         "runtimes/linux/native/libmongocrypt.so",
         "runtimes/osx/native/libmongocrypt.dylib",
         "runtimes/win/native/mongocrypt.dll"
+      ]
+    },
+    "ncalc/1.3.8": {
+      "sha512": "T3kt6mWc70x3Ex5PxOmuILy563CGAdoAnyknXX7Du2/SXs2T94hNwc5CVwZcwCu5/A2ZBZhnHnc5dpcqCRGQ0A==",
+      "type": "package",
+      "path": "ncalc/1.3.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/NCalc.dll",
+        "ncalc.1.3.8.nupkg.sha512",
+        "ncalc.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -7401,7 +7423,8 @@
       "DotVVM.AspNetCore >= 4.1.0",
       "DotVVM.HotReload.AspNetCore >= 4.1.0",
       "MongoDB.Driver >= 2.20.0",
-      "MyBestDataClassEver >= 1.0.0"
+      "MyBestDataClassEver >= 1.0.0",
+      "ncalc >= 1.3.8"
     ]
   },
   "packageFolders": {
@@ -7466,6 +7489,10 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.20.0, )"
+          },
+          "ncalc": {
+            "target": "Package",
+            "version": "[1.3.8, )"
           }
         },
         "imports": [
@@ -7490,5 +7517,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ncalc 1.3.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ncalc",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

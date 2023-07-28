@@ -15,8 +15,7 @@ namespace MySuperBestCalculatorEver.ViewModels
         public string log { get; set; }
         public List<string> loglines { get; set; } = new List<string>();
         public LogViewModel() {
-           
-           
+                   
             try {
                 using (StreamReader reader = new StreamReader(filePath)) {
                     log = reader.ReadToEnd();
@@ -27,6 +26,9 @@ namespace MySuperBestCalculatorEver.ViewModels
 
             }
         }   
+
+
+
     }
 }
 

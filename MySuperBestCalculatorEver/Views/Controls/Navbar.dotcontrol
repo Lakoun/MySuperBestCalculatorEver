@@ -1,0 +1,34 @@
+﻿@viewModel MySuperBestCalculatorEver.ViewModels.MasterPageViewModel, MySuperBestCalculatorEver
+
+
+<header class="navbar navbar-expand-md navbar-light d-print-none">
+    <div class="container-fluid" style="margin-left: 10px; margin-right: 10px">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="container-xl">
+            <div class="collapse navbar-collapse" ID="navbar-menu">
+                <div class="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <dot:RouteLink class="nav-link" RouteName="Default">
+                                <span class="nav-link-title">
+                                    Home
+                                </span>
+                            </dot:RouteLink>
+                        </li>
+                        <li class="nav-item">
+                            <dot:RouteLink class="nav-link" RouteName="Log">
+                                <span class="nav-link-title">
+                                    Log
+                                </span>
+                            </dot:RouteLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -5,40 +5,41 @@
         <h1>My Super Calculator</h1>
         <div class="calculator">
             <div class="button-row">
-                <dot:TextBox Text="" style="width:100%" class="form-control" disabled />
+                <dot:TextBox Visible="{value: result == 0}" Text="{value: expression}" style="width:100%" class="form-control" disabled />
+                <dot:TextBox Visible="{value: result != 0}"Text="{value: result}" style="width:100%" class="form-control" disabled />
             </div>
 
             <div class="calculator-keys">
                 <div class="button-row">
-                    <button value="7">7</button>
-                    <button value="8">8</button>
-                    <button value="9">9</button>
-                    <button class="bg-blue" value="+">+</button>
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("7")}" Text="7" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("8")}" Text="8" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("9")}" Text="9" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("+")}" class="bg-blue" Text="+" />
                 </div>
 
                 <div class="button-row">
-                    <button value="4">4</button>
-                    <button value="5">5</button>
-                    <button value="6">6</button>
-                    <button class="bg-blue" value="-">-</button>
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("4")}" Text="4" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("5")}" Text="5" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("6")}" Text="6" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("-")}" class="bg-blue" Text="-" />
                 </div>
 
                 <div class="button-row">
-                    <button value="1">1</button>
-                    <button value="2">2</button>
-                    <button value="3">3</button>
-                    <button class="bg-blue" value="*">&times;</button>
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("1")}" Text="1" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("2")}" Text="2" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("3")}" Text="3" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("*")}" class="bg-blue" Text="*" />
                 </div>
 
                 <div class="button-row">
-                    <button value="0">0</button>
-                    <button value=".">.</button>
-                    <button class="bg-azure">C</button>
-                    <button class="bg-blue" value="/">&divide;</button>
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("0")}" Text="0" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar(".")}" Text="." />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("C")}" Text="C" />
+                    <dot:button ButtonTagName="button" Click="{command: AddChar("/")}" class="bg-blue" Text="/" />
                 </div>
 
                 <div class="button-row">
-                    <button class="bg-orange" value="=">Spocitat</button>
+                    <dot:button Click="{command: Calc()}" ButtonTagName="button" class="bg-red" Text="Spocitat" />
                 </div>
 
             </div>
